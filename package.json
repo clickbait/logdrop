@@ -1,0 +1,19 @@
+{
+  "name": "logdrop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neko/logdrop.git"
+  },
+  "author": "Clickbait",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/neko/logdrop/issues"
+  },
+  "homepage": "https://github.com/neko/logdrop#readme",
+  "dependencies": {
+    "discord.io": "^2.3.0"
+  }
+}
