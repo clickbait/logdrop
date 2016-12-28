@@ -48,8 +48,12 @@ function build_messages(self, messages) {
 	var log_part = "";
 
 	for (var i=0; i < messages.length; i++) {
-		console.log("logging: " + messages[i].content)
-		log_part += messages[i].author.username + " : " + self.fixMessage(messages[i].content) + "\n"
+		console.log("logging: " + messages[i].id)
+		log_part += messages[i].author.username + " : " + self.fixMessage(messages[i].content) + "\n";
+
+    for (var j=0; j < messages[i].attachments.length; j++) {
+      log_part += messages[i].attachments[j].url + "\n";
+    }
 	}
 
 	return log_part;
